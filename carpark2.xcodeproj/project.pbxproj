@@ -8,18 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		CE29F0D82A982E2B00B03B10 /* carpark2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE29F0D72A982E2B00B03B10 /* carpark2App.swift */; };
-		CE29F0DA2A982E2B00B03B10 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE29F0D92A982E2B00B03B10 /* ContentView.swift */; };
 		CE29F0DC2A982E2C00B03B10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE29F0DB2A982E2C00B03B10 /* Assets.xcassets */; };
 		CE29F0E02A982E2C00B03B10 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE29F0DF2A982E2C00B03B10 /* Preview Assets.xcassets */; };
+		CE29F0E92A982E7E00B03B10 /* CarParkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE29F0E82A982E7E00B03B10 /* CarParkViewModel.swift */; };
+		CE29F0EC2A982EA800B03B10 /* CarParkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE29F0EB2A982EA800B03B10 /* CarParkView.swift */; };
+		CE29F0EF2A982EEA00B03B10 /* CarPark.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE29F0EE2A982EEA00B03B10 /* CarPark.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE29F0D42A982E2B00B03B10 /* carpark2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = carpark2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE29F0D72A982E2B00B03B10 /* carpark2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carpark2App.swift; sourceTree = "<group>"; };
-		CE29F0D92A982E2B00B03B10 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE29F0DB2A982E2C00B03B10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE29F0DD2A982E2C00B03B10 /* carpark2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = carpark2.entitlements; sourceTree = "<group>"; };
 		CE29F0DF2A982E2C00B03B10 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE29F0E82A982E7E00B03B10 /* CarParkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarParkViewModel.swift; sourceTree = "<group>"; };
+		CE29F0EB2A982EA800B03B10 /* CarParkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarParkView.swift; sourceTree = "<group>"; };
+		CE29F0EE2A982EEA00B03B10 /* CarPark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPark.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +56,10 @@
 		CE29F0D62A982E2B00B03B10 /* carpark2 */ = {
 			isa = PBXGroup;
 			children = (
-				CE29F0D72A982E2B00B03B10 /* carpark2App.swift */,
-				CE29F0D92A982E2B00B03B10 /* ContentView.swift */,
+				CE29F0E62A982E4800B03B10 /* App */,
+				CE29F0ED2A982ED300B03B10 /* Model */,
+				CE29F0E72A982E5F00B03B10 /* ViewModel */,
+				CE29F0EA2A982E9700B03B10 /* View */,
 				CE29F0DB2A982E2C00B03B10 /* Assets.xcassets */,
 				CE29F0DD2A982E2C00B03B10 /* carpark2.entitlements */,
 				CE29F0DE2A982E2C00B03B10 /* Preview Content */,
@@ -67,6 +73,38 @@
 				CE29F0DF2A982E2C00B03B10 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE29F0E62A982E4800B03B10 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CE29F0D72A982E2B00B03B10 /* carpark2App.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CE29F0E72A982E5F00B03B10 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE29F0E82A982E7E00B03B10 /* CarParkViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE29F0EA2A982E9700B03B10 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE29F0EB2A982EA800B03B10 /* CarParkView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE29F0ED2A982ED300B03B10 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE29F0EE2A982EEA00B03B10 /* CarPark.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +177,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE29F0DA2A982E2B00B03B10 /* ContentView.swift in Sources */,
+				CE29F0EF2A982EEA00B03B10 /* CarPark.swift in Sources */,
 				CE29F0D82A982E2B00B03B10 /* carpark2App.swift in Sources */,
+				CE29F0EC2A982EA800B03B10 /* CarParkView.swift in Sources */,
+				CE29F0E92A982E7E00B03B10 /* CarParkViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
